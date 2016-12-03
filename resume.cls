@@ -1,4 +1,4 @@
-ntro Options
+% Intro Options
 \ProvidesClass{deedy-resume-openfont}[2014/04/30 CV class]
 \NeedsTeXFormat{LaTeX2e}
 \DeclareOption{print}{\def\@cv@print{}}
@@ -19,8 +19,8 @@ ntro Options
 \usepackage{fontspec,xltxtra,xunicode}
 
 % Color definitions
-\definecolor{date}{HTML}{666666} 
-\definecolor{primary}{HTML}{2b2b2b} 
+\definecolor{date}{HTML}{666666}
+\definecolor{primary}{HTML}{2b2b2b}
 \definecolor{headings}{HTML}{6A6A6A}
 \definecolor{subheadings}{HTML}{333333}
 
@@ -35,22 +35,22 @@ ntro Options
 \setlength{\TPVertModule}{1mm}
 \textblockorigin{0mm}{5mm} % start everyth
 \newcommand{\lastupdated}{\begin{textblock}{60}(165,0)
-\color{date}\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}\fontsize{8pt}{10pt}\selectfont 
-Last Updated on
+\color{date}\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}\fontsize{8pt}{10pt}\selectfont
+Updated
 \today
 \end{textblock}}
 
 % Name command
 \newcommand{\namesection}[3]{
-    \centering{
-        \sffamily
-        \fontspec[Path = fonts/lato/]{Lato-Hai}\fontsize{40pt}{10cm}\selectfont #1 
-        \fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #2
-    } \\
-    \vspace{5pt}
-    \centering{ \color{headings}\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #3}
-    \noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
-    \vspace{-15pt}
+	\centering{
+		\sffamily
+		\fontspec[Path = fonts/lato/]{Lato-Hai}\fontsize{40pt}{10cm}\selectfont #1
+		\fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #2
+	} \\
+	\vspace{5pt}
+	\centering{ \color{headings}\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #3}
+	\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
+	\vspace{-15pt}
 }
 \titlespacing{\section}{0pt}{0pt}{0pt}
 
@@ -77,5 +77,3 @@ Last Updated on
 
 % Bullet Lists with fewer gaps command
 \newenvironment{tightemize}{\vspace{-\topsep}\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt}{\end{itemize}\vspace{-\topsep}}
-
-
